@@ -26,7 +26,10 @@ Star⭐ the repo if you like what you see😉.
 ## 🤓 Author(s)
 **Bakht Muhammad** 
 
-[![Youtube](https://img.shields.io/static/v1?label=@bakht.muhammad&message=Subscribe&logo=YouTube&color=FF0000&style=for-the-badge)][youtube]
-[![Twitter Follow](https://img.shields.io/twitter/follow/@bakht.muhammad?color=1DA1F2&label=Followers&logo=twitter&style=for-the-badge)][twitter]
-[![Newsletter](https://img.shields.io/static/v1?label=Follow&message=My%20Flutter%20Newsletter&color=5FB709&style=for-the-badge)][newsletter]
+[![Youtube Badge](https://img.shields.io/badge/-Bakht_Muhammad-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
+[![Twitter Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
+[![Gmail Badge](https://img.shields.io/badge/-engbakhtmuhammad@gmail.com-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
+
+
 
