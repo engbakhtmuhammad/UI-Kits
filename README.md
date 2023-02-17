@@ -32,10 +32,10 @@ Star⭐ the repo if you like what you see😉.
 ## 🤓 Author(s)
 **Bakht Muhammad** 
 
-[![Youtube Badge](https://img.shields.io/badge/-Bakht_Muhammad-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
-[![Twitter Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
-[![Gmail Badge](https://img.shields.io/badge/-engbakhtmuhammad@gmail.com-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
-[![Linkedin Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
+[![Youtube Badge](https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
+[![Gmail Badge](https://img.shields.io/badge/-Email-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
 
 
 
