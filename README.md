@@ -24,5 +24,9 @@ Star⭐ the repo if you like what you see😉.
 * A brain to think 🤓🤓
 
 ## 🤓 Author(s)
-**Bakht Muhammad** [![Subscribe Youtube](https://img.shields.io/twitter/follow/iamjideguru.svg?style=social)](https://twitter.com/iamjideguru)
+**Bakht Muhammad** 
+
+[![Youtube](https://img.shields.io/static/v1?label=@bakht.muhammad&message=Subscribe&logo=YouTube&color=FF0000&style=for-the-badge)][youtube]
+[![Twitter Follow](https://img.shields.io/twitter/follow/@bakht.muhammad?color=1DA1F2&label=Followers&logo=twitter&style=for-the-badge)][twitter]
+[![Newsletter](https://img.shields.io/static/v1?label=Follow&message=My%20Flutter%20Newsletter&color=5FB709&style=for-the-badge)][newsletter]
 
