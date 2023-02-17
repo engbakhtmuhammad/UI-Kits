@@ -1,4 +1,4 @@
-# 🍔Foodybite [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) <a href="https://github.com/Solido/awesome-flutter"><img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" /></a>
+# 🍔Ui Kits [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) <a href="https://github.com/Solido/awesome-flutter"><img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" /></a>
 
 Flutter representation of a Restaurant app UI i found in Uplabs. 
 **It only consists of 2 screens.**
@@ -27,9 +27,10 @@ Star⭐ the repo if you like what you see😉.
 **Bakht Muhammad** 
 
 [![Youtube Badge](https://img.shields.io/badge/-Bakht_Muhammad-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
+[![Linkedin Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
 [![Twitter Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
 [![Gmail Badge](https://img.shields.io/badge/-engbakhtmuhammad@gmail.com-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
-[![Linkedin Badge](https://img.shields.io/badge/-Bakht_Muhammad-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
+
 
 
 
