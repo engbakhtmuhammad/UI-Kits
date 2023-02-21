@@ -10,7 +10,8 @@ So, what are you waiting for? Subscribe to our channel now and unlock the potent
 
 
 Star⭐ the repo if you like what you see😉.
-[![GitHub stars](https://img.shields.io/github/stars/bakhtkhilji23/curved_bottom_navigation_bar.svg?style=social&label=Star)](https://github.com/bakhtkhilji23/UI-Kits)
+
+[![GitHub stars](https://img.shields.io/github/stars/bakhtkhilji23/UI-Kits.svg?style=social&label=Star)](https://github.com/bakhtkhilji23/UI-Kits)
 [![GitHub bakhtkhilji23](https://img.shields.io/github/followers/bakhtkhilji23?label=follow&style=social)](https://github.com/bakhtkhilji23)
 
 
