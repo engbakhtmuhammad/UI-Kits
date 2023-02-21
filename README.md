@@ -9,7 +9,7 @@ But that's not all - we aim to provide more than just a product. Our UI Kits are
 So, what are you waiting for? Subscribe to our channel now and unlock the potential to create truly stunning mobile apps. With our UI Kits, the possibilities are endless. Like our Github repository and get ready to take your app to the next level!
 
 
-Star⭐ the repo if you like what you see😉.
+Star ⭐ the repo if you like and Follow 😉.
 
 [![GitHub stars](https://img.shields.io/github/stars/bakhtkhilji23/UI-Kits.svg?style=social&label=Star)](https://github.com/bakhtkhilji23/UI-Kits)
 [![GitHub bakhtkhilji23](https://img.shields.io/github/followers/bakhtkhilji23?label=follow&style=social)](https://github.com/bakhtkhilji23)
