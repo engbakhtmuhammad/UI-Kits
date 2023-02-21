@@ -17,7 +17,7 @@ Star ⭐ the repo if you like and Follow 😉.
 
 ## 📸 ScreenShots
 
-<img src="ss/1.png"/>
+<img src="ss/relax_ui.png"/>
 
 <!-- | 1 | 2|
 |------|-------|
