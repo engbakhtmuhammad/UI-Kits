@@ -10,7 +10,8 @@ So, what are you waiting for? Subscribe to our channel now and unlock the potent
 
 
 Star⭐ the repo if you like what you see😉.
-[![Youtube Badge](https://img.shields.io/badge/-Bakht_Muhammad-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
+[![GitHub stars](https://img.shields.io/github/stars/bakhtkhilji23/curved_bottom_navigation_bar.svg?style=social&label=Star)](https://github.com/bakhtkhilji23/UI-Kits)
+[![GitHub bakhtkhilji23](https://img.shields.io/github/followers/bakhtkhilji23?label=follow&style=social)](https://github.com/bakhtkhilji23)
 
 
 ## 📸 ScreenShots
