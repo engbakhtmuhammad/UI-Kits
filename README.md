@@ -17,9 +17,9 @@ Star ⭐ the repo if you like and Follow 😉.
 
 ## 📸 ScreenShots
 
-
+<div align="center">
 <a href="https://github.com/bakhtkhilji23/UI-Kits/tree/master/relax_splash"> <img width="100%"src="ss/relax_ui.png"/></a>
-     
+</div>
 <!-- | 1 | 2|
 |------|-------|
 |<img src="ss/2.png" width="400">|<img src="ss/3.png" width="400">| -->
