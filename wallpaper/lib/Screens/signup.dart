@@ -6,6 +6,7 @@ import 'package:wallpaper/Screens/sigin.dart';
 import 'package:wallpaper/utils/colors.dart';
 import 'package:wallpaper/widgets/background_image.dart';
 import 'package:wallpaper/widgets/customBtn_widget.dart';
+import 'package:wallpaper/widgets/have_account.dart';
 
 import '../widgets/signup_body.dart';
 import 'welcome.dart';
@@ -50,36 +51,9 @@ class _SignUpPageState extends State<SignUpPage> {
                         EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
                     child: SignUpBody(),
                   ),
-                  Center(
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 8.0,
-                          ),
-                          child: Text("Don't have an account? ",
-                              style: TextStyle(
-                                  fontFamily: "mont",
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white.withOpacity(0.9))),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => SignInPage(),
-                            ));
-                          },
-                          child: const Text("Sign Up",
-                              style: TextStyle(
-                                fontFamily: "mont",
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: pinkColor,
-                              )),
-                        )
-                      ],
-                    ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 20.h),
+                    child: HaveAccountWidget(haveAccount: true),
                   )
                 ],
               ),
@@ -87,7 +61,7 @@ class _SignUpPageState extends State<SignUpPage> {
             Positioned(
                 left: 60.w,
                 right: 60.w,
-                top: 620.h,
+                top: 625.h,
                 child: CustomBtn(
                     text: "Register", color: pinkColor, onTap: () {})),
           ],

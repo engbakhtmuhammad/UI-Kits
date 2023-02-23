@@ -1,15 +1,17 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
+import '../utils/colors.dart';
+
 // ignore: must_be_immutable
-class Detay extends StatefulWidget {
-  var imgPath;
-  Detay({Key? key, this.imgPath}) : super(key: key);
+class DetailWallpaper extends StatefulWidget {
+  String image;
+  DetailWallpaper({Key? key, required this.image}) : super(key: key);
   @override
-  _DetayState createState() => _DetayState();
+  _DetailWallpaperState createState() => _DetailWallpaperState();
 }
 
-class _DetayState extends State<Detay> {
+class _DetailWallpaperState extends State<DetailWallpaper> {
   verify() {
     setState(() {
       _isLoading = true;
@@ -30,13 +32,13 @@ class _DetayState extends State<Detay> {
     return Scaffold(
         body: Stack(children: [
       Hero(
-        tag: widget.imgPath,
+        tag: widget.image,
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
               image: DecorationImage(
-            image: AssetImage(widget.imgPath),
+            image: AssetImage(widget.image.toString()),
             fit: BoxFit.cover,
           )),
         ),
@@ -63,7 +65,7 @@ class _DetayState extends State<Detay> {
           child: Text(
             "Wall On Hand",
             style: TextStyle(
-                color: Color(0xffFF8A00),
+                color: pinkColor,
                 fontFamily: "mont",
                 fontSize: 30,
                 fontWeight: FontWeight.w900),
@@ -88,7 +90,7 @@ class _DetayState extends State<Detay> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                primary: const Color(0xffFF8A00),
+                primary: pinkColor,
                 fixedSize: const Size(180, 50)),
             onPressed: _code.length == 1
                 ? null
@@ -130,13 +132,13 @@ class _DetayState extends State<Detay> {
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(80),
                 border: Border.all(
-                  color: const Color(0xffFF8A00),
+                  color: pinkColor,
                   width: 2,
                 )),
             child: const Icon(
               Icons.share,
               size: 25,
-              color: Color(0xffFF8A00),
+              color: pinkColor,
             ),
           )),
       Positioned(
@@ -149,13 +151,13 @@ class _DetayState extends State<Detay> {
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(80),
                 border: Border.all(
-                  color: const Color(0xffFF8A00),
+                  color: pinkColor,
                   width: 2,
                 )),
             child: const Icon(
               Icons.favorite,
               size: 25,
-              color: Color(0xffFF8A00),
+              color: pinkColor,
             ),
           ))
     ]));

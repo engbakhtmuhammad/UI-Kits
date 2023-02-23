@@ -13,7 +13,7 @@ class SignUpBody extends StatelessWidget {
     // double sizeWidth = MediaQuery.of(context).size.width;
     return Container(
       width: double.infinity,
-      height: 455.h,
+      height: 460.h,
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: Column(

@@ -1,6 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-import 'detay.dart';
+import '../utils/colors.dart';
+import 'detail_wallpaper.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +14,48 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List wallpaperList = [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+  ];
+
+  late PageController _pageController;
+  int pageIndex = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  onPageChanged(int pageIndex) {
+    setState(() {
+      this.pageIndex = pageIndex;
+    });
+  }
+
+  onTap(int pageIndex) {
+    _pageController.animateToPage(
+      pageIndex,
+      duration: Duration(milliseconds: 300),
+      curve: Curves.bounceIn,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     double sizeHeight = MediaQuery.of(context).size.height;
@@ -22,252 +68,112 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(20.0),
               child: Icon(
                 Icons.search,
-                color: Color(0xffFF8A00),
+                color: pinkColor,
                 size: 35,
               ),
             )
           ],
-          backgroundColor: const Color(0xff233E50),
+          backgroundColor: Colors.transparent,
           elevation: 0,
           leading: const Padding(
             padding: EdgeInsets.all(20.0),
             child: Icon(
               Icons.app_registration_outlined,
               size: 35,
-              color: Color(0xffFF8A00),
+              color: pinkColor,
             ),
           ),
         ),
         body: Stack(
+          alignment: Alignment.bottomCenter,
           children: [
-            Container(
-              decoration: const BoxDecoration(color: Color(0xff233E50)),
-            ),
-            const Positioned(
-                left: 25,
-                top: 30,
-                child: Text(
-                  "Today's",
-                  style: TextStyle(
-                      fontFamily: "mont",
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 35),
-                )),
-            const Positioned(
-                left: 25,
-                top: 75,
-                child: Text(
-                  "best picks",
-                  style: TextStyle(
-                      fontFamily: "mont",
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xffFF8A00),
-                      fontSize: 30),
-                )),
-            Positioned(
-              left: 25,
-              right: 25,
-              top: 130,
-              child: Column(children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 SizedBox(
-                  width: 340,
-                  height: 160,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Container(
-                          width: 300,
-                          height: 150,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: const DecorationImage(
-                                  image: AssetImage(
-                                    "assets/2.jpg",
-                                  ),
-                                  fit: BoxFit.cover))),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
-                        child: Container(
-                            width: 300,
-                            height: 150,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                image: const DecorationImage(
-                                    image: AssetImage(
-                                      "assets/3.jpg",
-                                    ),
-                                    fit: BoxFit.cover))),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
-                        child: Container(
-                            width: 300,
-                            height: 150,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                image: const DecorationImage(
-                                    image: AssetImage(
-                                      "assets/4.jpg",
-                                    ),
-                                    fit: BoxFit.cover))),
-                      )
-                    ],
+                  height: 10.h,
+                ),
+                const ListTile(
+                  title: Text(
+                    "Today's",
+                    style: TextStyle(
+                        fontFamily: "mont",
+                        fontWeight: FontWeight.bold,
+                        color: blackColor,
+                        fontSize: 35),
+                  ),
+                  subtitle: Text(
+                    "best picks",
+                    style: TextStyle(
+                        fontFamily: "mont",
+                        fontWeight: FontWeight.bold,
+                        color: pinkColor,
+                        fontSize: 30),
                   ),
                 ),
-              ]),
-            ),
-            const Positioned(
-                top: 300,
-                left: 25,
-                child: Text(
-                  "Trending",
-                  style: TextStyle(
-                      color: Color(0xffFF8A00),
-                      fontSize: 25,
-                      fontFamily: "mont",
-                      fontWeight: FontWeight.bold),
-                )),
-            Positioned(
-              left: 25,
-              right: 25,
-              bottom: 40,
-              child: SizedBox(
-                height: 350,
-                child: Stack(
-                  children: [
-                    Positioned(
-                        left: 15,
-                        top: 10,
-                        child: InkWell(
-                          onTap: () {
-                            debugPrint("Resme Basıldı");
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) =>
-                                    Detay(imgPath: "assets/3.jpg")));
-                          },
-                          child: Container(
-                            height: 200,
-                            width: 150,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: const DecorationImage(
-                                  image: AssetImage("assets/3.jpg"),
-                                  fit: BoxFit.cover),
+                SizedBox(
+                  height: 610.h,
+                  width: double.infinity,
+                  child: StaggeredGridView.countBuilder(
+                    padding: const EdgeInsets.all(8.0),
+                    crossAxisCount: 4,
+                    itemCount: wallpaperList.length,
+                    itemBuilder: (context, i) {
+                      return InkWell(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailWallpaper(
+                                    image: "assets/${i + 1}.jpg"))),
+                        child: Hero(
+                          tag: "assets/$i.jpg",
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: FadeInImage(
+                              image: AssetImage("assets/${i + 1}.jpg"),
+                              fit: BoxFit.cover,
+                              placeholder: const AssetImage("assets/wp.png"),
                             ),
                           ),
-                        )),
-                    Positioned(
-                        right: 15,
-                        top: 15,
-                        child: Container(
-                          height: 120,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: const DecorationImage(
-                                image: AssetImage("assets/5.jpg"),
-                                fit: BoxFit.cover),
-                          ),
-                        )),
-                    const Positioned(
-                        right: 20,
-                        top: 20,
-                        child: Icon(
-                          Icons.star_rate_rounded,
-                          color: Colors.white,
-                        )),
-                    Positioned(
-                        right: 15,
-                        top: 150,
-                        child: Container(
-                          height: 200,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: const DecorationImage(
-                                image: AssetImage("assets/4.jpg"),
-                                fit: BoxFit.cover),
-                          ),
-                        )),
-                    Positioned(
-                        left: 15,
-                        bottom: 5,
-                        child: Container(
-                          height: 120,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: const DecorationImage(
-                                image: AssetImage("assets/7.jpg"),
-                                fit: BoxFit.cover),
-                          ),
-                        )),
-                  ],
+                        ),
+                      );
+                    },
+                    staggeredTileBuilder: (i) =>
+                        StaggeredTile.count(2, i.isEven ? 2 : 3),
+                    mainAxisSpacing: 10.0,
+                    crossAxisSpacing: 10.0,
+                  ),
+                )
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 40.w),
+              child: Container(
+                decoration: BoxDecoration(
+                    color: pinkColor, borderRadius: BorderRadius.circular(30)),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: CupertinoTabBar(
+                      border: const Border(top: BorderSide(color: pinkColor)),
+                      backgroundColor: pinkColor,
+                      currentIndex: pageIndex,
+                      onTap: onTap,
+                      activeColor: blackColor,
+                      // inactiveColo r: Colors.grey,
+                      items: const [
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.home),
+                        ),
+                        BottomNavigationBarItem(
+                          icon: Icon(Icons.favorite),
+                        ),
+                        BottomNavigationBarItem(icon: Icon(Icons.person_off)),
+                        BottomNavigationBarItem(icon: Icon(Icons.hearing)),
+                      ]),
                 ),
               ),
             ),
-            Positioned(
-              bottom: 30,
-              left: 60,
-              right: 60,
-              child: Container(
-                  height: sizeHeight * 0.07,
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(80))),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: const Color(0xffFF8A00),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        Icon(
-                          Icons.home,
-                          size: 30,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(right: 55.0),
-                          child: Icon(
-                            Icons.star,
-                            color: Colors.white,
-                            size: 30,
-                          ),
-                        ),
-                        Icon(
-                          Icons.person,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                        Icon(
-                          Icons.settings,
-                          color: Colors.white,
-                          size: 30,
-                        )
-                      ],
-                    ),
-                  )),
-            ),
-            Positioned(
-                left: 170,
-                bottom: 65,
-                child: Container(
-                  height: 60,
-                  width: 60,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 4, color: Colors.white),
-                    borderRadius: BorderRadius.circular(50),
-                    color: const Color(0xffFF8A00),
-                  ),
-                  child: const Center(
-                    child: Icon(
-                      Icons.add,
-                      size: 30,
-                      color: Colors.white,
-                    ),
-                  ),
-                )),
           ],
         ),
       ),
