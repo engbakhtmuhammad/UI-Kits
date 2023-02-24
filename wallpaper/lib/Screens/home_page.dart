@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
   onTap(int pageIndex) {
     _pageController.animateToPage(
       pageIndex,
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       curve: Curves.bounceIn,
     );
   }
@@ -87,77 +87,84 @@ class _HomePageState extends State<HomePage> {
         body: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(
-                  height: 10.h,
-                ),
-                const ListTile(
-                  title: Text(
-                    "Today's",
-                    style: TextStyle(
-                        fontFamily: "mont",
-                        fontWeight: FontWeight.bold,
-                        color: blackColor,
-                        fontSize: 35),
-                  ),
-                  subtitle: Text(
-                    "best picks",
-                    style: TextStyle(
-                        fontFamily: "mont",
-                        fontWeight: FontWeight.bold,
-                        color: pinkColor,
-                        fontSize: 30),
-                  ),
-                ),
-                SizedBox(
-                  height: 610.h,
-                  width: double.infinity,
-                  child: StaggeredGridView.countBuilder(
-                    padding: const EdgeInsets.all(8.0),
-                    crossAxisCount: 4,
-                    itemCount: wallpaperList.length,
-                    itemBuilder: (context, i) {
-                      return InkWell(
-                        onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => DetailWallpaper(
-                                    image: "assets/${i + 1}.jpg"))),
-                        child: Hero(
-                          tag: "assets/$i.jpg",
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: FadeInImage(
-                              image: AssetImage("assets/${i + 1}.jpg"),
-                              fit: BoxFit.cover,
-                              placeholder: const AssetImage("assets/wp.png"),
+            SizedBox(
+              height: 720.h,
+              width: double.infinity,
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    const ListTile(
+                      title: Text(
+                        "Today's",
+                        style: TextStyle(
+                            fontFamily: "mont",
+                            fontWeight: FontWeight.bold,
+                            color: blackColor,
+                            fontSize: 35),
+                      ),
+                      subtitle: Text(
+                        "best picks",
+                        style: TextStyle(
+                            fontFamily: "mont",
+                            fontWeight: FontWeight.bold,
+                            color: pinkColor,
+                            fontSize: 30),
+                      ),
+                    ),
+                    StaggeredGridView.countBuilder(
+                      padding: const EdgeInsets.all(8.0),
+                      crossAxisCount: 4,
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: wallpaperList.length,
+                      itemBuilder: (context, i) {
+                        return InkWell(
+                          onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DetailWallpaper(
+                                      image: "assets/${i + 1}.jpg"))),
+                          child: Hero(
+                            tag: "assets/$i.jpg",
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: FadeInImage(
+                                image: AssetImage("assets/${i + 1}.jpg"),
+                                fit: BoxFit.cover,
+                                placeholder: const AssetImage("assets/wp.png"),
+                              ),
                             ),
                           ),
-                        ),
-                      );
-                    },
-                    staggeredTileBuilder: (i) =>
-                        StaggeredTile.count(2, i.isEven ? 2 : 3),
-                    mainAxisSpacing: 10.0,
-                    crossAxisSpacing: 10.0,
-                  ),
-                )
-              ],
+                        );
+                      },
+                      staggeredTileBuilder: (i) =>
+                          StaggeredTile.count(2, i.isEven ? 2 : 3),
+                      mainAxisSpacing: 10.0,
+                      crossAxisSpacing: 10.0,
+                    )
+                  ],
+                ),
+              ),
             ),
+            // Bottom Navigation
             Padding(
               padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 40.w),
               child: Container(
                 decoration: BoxDecoration(
                     color: pinkColor, borderRadius: BorderRadius.circular(30)),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 12.w, vertical: 5.h),
                   child: CupertinoTabBar(
                       border: const Border(top: BorderSide(color: pinkColor)),
                       backgroundColor: pinkColor,
                       currentIndex: pageIndex,
+                      inactiveColor: Colors.white,
                       onTap: onTap,
                       activeColor: blackColor,
                       // inactiveColo r: Colors.grey,
@@ -168,8 +175,8 @@ class _HomePageState extends State<HomePage> {
                         BottomNavigationBarItem(
                           icon: Icon(Icons.favorite),
                         ),
-                        BottomNavigationBarItem(icon: Icon(Icons.person_off)),
-                        BottomNavigationBarItem(icon: Icon(Icons.hearing)),
+                        BottomNavigationBarItem(icon: Icon(Icons.person)),
+                        BottomNavigationBarItem(icon: Icon(Icons.settings)),
                       ]),
                 ),
               ),

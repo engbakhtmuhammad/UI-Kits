@@ -25,46 +25,48 @@ class _SignUpPageState extends State<SignUpPage> {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.transparent,
-        body: Stack(
-          children: [
-            BackgroundWidget(),
-            Center(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 100.h,
-                  ),
-                  Text("Sign Up",
-                      style: TextStyle(
-                          fontFamily: "mont",
-                          fontSize: 35,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold)),
-                  Text("Lorem ipsum dolar sit amet",
-                      style: TextStyle(
-                          fontFamily: "mont",
-                          fontSize: 20,
-                          color: pinkColor,
-                          fontWeight: FontWeight.bold)),
-                  Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-                    child: SignUpBody(),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 20.h),
-                    child: HaveAccountWidget(haveAccount: true),
-                  )
-                ],
+        body: SingleChildScrollView(
+          child: Stack(
+            children: [
+              BackgroundWidget(),
+              Center(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 100.h,
+                    ),
+                    Text("Sign Up",
+                        style: TextStyle(
+                            fontFamily: "mont",
+                            fontSize: 35,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold)),
+                    Text("Lorem ipsum dolar sit amet",
+                        style: TextStyle(
+                            fontFamily: "mont",
+                            fontSize: 20,
+                            color: pinkColor,
+                            fontWeight: FontWeight.bold)),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 20.w, vertical: 20.h),
+                      child: SignUpBody(),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 20.h),
+                      child: HaveAccountWidget(haveAccount: true),
+                    )
+                  ],
+                ),
               ),
-            ),
-            Positioned(
-                left: 60.w,
-                right: 60.w,
-                top: 625.h,
-                child: CustomBtn(
-                    text: "Register", color: pinkColor, onTap: () {})),
-          ],
+              Positioned(
+                  left: 60.w,
+                  right: 60.w,
+                  top: 625.h,
+                  child: CustomBtn(
+                      text: "Register", color: pinkColor, onTap: () {})),
+            ],
+          ),
         ),
       ),
     );
