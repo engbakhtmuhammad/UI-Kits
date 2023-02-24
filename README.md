@@ -19,6 +19,7 @@ Star ⭐ the repo if you like and Follow 😉.
 
 <div align="center">
   <a href="https://github.com/bakhtkhilji23/UI-Kits/tree/master/relax_splash"> <img width="100%"src="ss/relax_ui.png"/></a>
+  <a href="https://github.com/bakhtkhilji23/UI-Kits/tree/master/wallpaper"> <img width="100%"src="ss/wallpaper.png"/></a>
   
 </div>
 <!-- | 1 | 2|

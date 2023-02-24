@@ -22,8 +22,6 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
-    double sizeHeight = MediaQuery.of(context).size.height;
-    double sizeWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
@@ -48,9 +46,6 @@ class _SignInPageState extends State<SignInPage> {
                         fontSize: 20,
                         color: pinkColor,
                         fontWeight: FontWeight.bold)),
-                // SizedBox(
-                //   height: 200.h,
-                // ),
                 Padding(
                   padding:
                       EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),

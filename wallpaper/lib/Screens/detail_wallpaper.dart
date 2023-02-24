@@ -93,7 +93,7 @@ class _DetailWallpaperState extends State<DetailWallpaper> {
                 fixedSize: const Size(180, 50)),
             onPressed: _code.length == 1
                 ? null
-                : () {
+                : () { 
                     verify();
                   },
             child: _isLoading
