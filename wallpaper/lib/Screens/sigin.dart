@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wallpaper/Screens/navigation.dart';
 import 'package:wallpaper/widgets/background_image.dart';
 import 'package:wallpaper/widgets/customBtn_widget.dart';
 
@@ -68,8 +69,10 @@ class _SignInPageState extends State<SignInPage> {
               child: CustomBtn(
                   text: "Sign In",
                   color: pinkColor,
-                  onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()))),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NavigationPage()))),
             ),
           ],
         ),
