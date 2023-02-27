@@ -11,15 +11,15 @@ So, what are you waiting for? Subscribe to our channel now and unlock the potent
 
 Star ⭐ the repo if you like and Follow 😉.
 
-[![GitHub stars](https://img.shields.io/github/stars/bakhtkhilji23/UI-Kits.svg?style=social&label=Star)](https://github.com/bakhtkhilji23/UI-Kits)
-[![GitHub bakhtkhilji23](https://img.shields.io/github/followers/bakhtkhilji23?label=follow&style=social)](https://github.com/bakhtkhilji23)
+[![GitHub stars](https://img.shields.io/github/stars/engbakhtmuhammad/UI-Kits.svg?style=social&label=Star)](https://github.com/engbakhtmuhammad/UI-Kits)
+[![GitHub engbakhtmuhammad](https://img.shields.io/github/followers/engbakhtmuhammad?label=follow&style=social)](https://github.com/engbakhtmuhammad)
 
 
 ## 📸 ScreenShots
 
 <div align="center">
-  <a href="https://github.com/bakhtkhilji23/UI-Kits/tree/master/relax_splash"> <img width="100%"src="ss/relax_ui.png"/></a>
-  <a href="https://github.com/bakhtkhilji23/UI-Kits/tree/master/wallpaper"> <img width="100%"src="ss/wallpaper.png"/></a>
+  <a href="https://github.com/engbakhtmuhammad/UI-Kits/tree/master/relax_splash"> <img width="100%"src="ss/relax_ui.png"/></a>
+  <a href="https://github.com/engbakhtmuhammad/UI-Kits/tree/master/wallpaper"> <img width="100%"src="ss/wallpaper.png"/></a>
   
 </div>
 <!-- | 1 | 2|
@@ -37,10 +37,10 @@ Star ⭐ the repo if you like and Follow 😉.
 ## 🤓 Author(s)
 **Bakht Muhammad** 
 
-[![Youtube Badge](https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@bakht.muhammad)
+[![Youtube Badge](https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@engbakhtmuhammad)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
 [![Gmail Badge](https://img.shields.io/badge/-Email-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bakht-muhammad-a7458515a/)](https://www.linkedin.com/in/bakht-muhammad-a7458515a/)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/engbakhtmuhammad/)](https://www.linkedin.com/in/engbakhtmuhammad/)
 
 
 
