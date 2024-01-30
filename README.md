@@ -38,7 +38,7 @@ Star ⭐ the repo if you like and Follow 😉.
 **Bakht Muhammad** 
 
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white&link=https://www.youtube.com/&color=rgb(234,67,53))](https://www.youtube.com/@engbakhtmuhammad)
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/BakhtMu74007949)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-blue?style=for-the-badge&logo=Twitter&logoColor=white&link=https://twitter.com/BakhtMu74007949)](https://twitter.com/engbakhtmuhamad)
 [![Gmail Badge](https://img.shields.io/badge/-Email-red?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:engbakhtmuhammad@gmail.com&color=rgb(234,67,53))](mailto:engbakhtmuhammad@gmail.com)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/engbakhtmuhammad/)](https://www.linkedin.com/in/engbakhtmuhammad/)
 
